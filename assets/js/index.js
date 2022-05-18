@@ -1,11 +1,17 @@
-var animais = document.querySelectorAll(".animal");
+var partes = document.querySelectorAll("a");
 
-for(animal of animais){
-    let audio = animal.querySelector('audio')
-    let box = animal.querySelector('.img')
-    box.style.backgroundImage = `url(./assets/img/${box.getAttribute("name")}.svg)`;
-    box.addEventListener('click',()=>{
-        for(animal2 of animais){animal2.querySelector('audio').pause()}
+for(parte of partes){
+    let audio = document.createElement("audio")
+    parte.appendChild(audio)
+    if(parte.matches(".nao")){
+        audio.src = "assets/music/errado.mp3"
+    }else if(parte.matches(".pode")){
+        audio.src = "assets/music/certo.mp3"
+    }else{
+        audio.src = "assets/music/atenção.mp3"
+    }
+    parte.addEventListener('click',()=>{
+        for(toque of partes){toque.querySelector('audio').pause()}
         audio.currentTime = 0;
         audio.play();
     });
