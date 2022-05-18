@@ -28,7 +28,7 @@ header{
 figure{
     position: relative;
     height: calc(100% - 2.7em);
-    background-image: url("/assets/img/menino.jpg");
+    background-image: url(/assets/img/menino.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
