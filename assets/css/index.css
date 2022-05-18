@@ -1,0 +1,125 @@
+:root{
+    --gren: lightgreen
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive, sans-serif;
+}
+
+@media screen and (min-width: 500px) {body{ font-size: 42px;}}
+@media screen and (max-width: 499px) {body{ font-size: 8.4vw;}}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    padding: 1em 0;
+    text-align: center;
+    font-weight: bolder;
+    font-size: .9em;
+    line-height: 1em;
+}
+
+figure{
+    position: relative;
+    height: calc(100% - 2.7em);
+    background-image: url("/assets/img/menino.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+a{
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+}
+
+a.nao{
+    background-color: red;
+}
+
+a.atencao{
+    background-color: yellow;
+}
+
+a.pode{
+    background-color: green;
+}
+
+a#cabelo{
+    top: 0.5em;
+    left: calc(50% - 0.85em);
+}
+
+a#boca{
+    top: 4.5em;
+    left: calc(50% - 1em);
+}
+
+a#braco{
+    top: 8em;
+    left: calc(50% + 1.3em);
+}
+
+a#mao{
+    top: 10em;
+    left: calc(50% + 1.5em);
+}
+
+a#geni{
+    top: 11.5em;
+    left: calc(50% - 0.85em);
+}
+
+a#peito{
+    top: 7em;
+    left: calc(50% - 0.5em);
+}
+
+a#barriga{
+    top: 9em;
+    left: calc(50% - 0.85em);
+}
+
+a#perna{
+    top: 14em;
+    left: calc(50% - 0.85em);
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.box .animal{
+    display: inline-flex;
+    flex: 1;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.img{
+    width: 5em;
+    height: 5em;
+    background-color: var(--gren);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    border-radius: 10%;
+    box-shadow: rgb(17 33 43) 5px 5px 2px;
+}
+
+.img:hover{
+    box-shadow: none;
+}
