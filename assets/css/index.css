@@ -28,7 +28,7 @@ header{
 
 figure{
     position: relative;
-    height: calc(100% - 2.7em);
+    height: 19.6em;
     background-image: url(../img/menino.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -66,14 +66,34 @@ a#boca{
     left: calc(50% - 1em);
 }
 
-a#braco{
+a#bracoD{
     top: 8.75em;
     left: calc(50% + 1.3em);
 }
 
-a#mao{
+a#bracoE{
+    top: 8.75em;
+    left: calc(50% - 3.4em);
+}
+
+a#maoD{
     top: 11em;
     left: calc(50% + 2em);
+}
+
+a#maoE{
+    top: 11em;
+    left: calc(50% - 4em);
+}
+
+a#peD{
+    top: 17.5em;
+    left: calc(50% + 1.1em);
+}
+
+a#peE{
+    top: 17.5em;
+    left: calc(50% - 2.9em);
 }
 
 a#geni{
@@ -91,7 +111,12 @@ a#barriga{
     left: calc(50% - 0.85em);
 }
 
-a#perna{
+a#pernaD{
     top: 15.5em;
     left: 50%;
+}
+
+a#pernaE{
+    top: 15.5em;
+    left: calc(50% - 1.8em);
 }
